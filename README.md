@@ -13,8 +13,12 @@ This repository contains an asynchronous flow to csv file processing for a devel
     The system has two components
         1. UserPortal -- Contains the User interface
         2. ProcessorService -- Background service that processes uploaded files
-        3. Database (BackUp)
+        3. Database Script
 ## STEPS
+## RESTORE THE DATABASE
+    1. Open the sql script file in Part_1 folder of the repository in Sql server.
+    2. Update locations where to save the .mdf and .ldf files of the database specific to the server
+    3. Click Run in SQL server to have the database and objects created.
 ## USER PORTAL
     1. Open the UserPortal Solution in Visual studio.
     2. Go to WebConfig of the "Portal" project and change the connectionstring appropriately. i.e
